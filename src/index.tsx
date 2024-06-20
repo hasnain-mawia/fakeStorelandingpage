@@ -11,6 +11,7 @@ import Errorpage from './pages/Errorpage';
 import Home from './pages/Home';
 import Products from './pages/products';
 import Dashboard from './pages/dashboard';
+import Form from './pages/form';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
       {
       path: "products/:id",
       element: <Products/>,
+      },
+      {
+      path: "form",
+      element: <Form/>,
       },
       {
       path: "dashboard/*",

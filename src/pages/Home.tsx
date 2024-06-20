@@ -25,7 +25,7 @@ function Home() {
     { productList.length === 0 ? <CLoader/> : 
       productList.map((item:any, i:number)=>{
       return(
-      <div key={i} className='shadow-2xl border-[1px] border-[#b5acac] max-w-[290px] rounded-2xl'>
+      <div key={i} className='shadow-2xl border-[1px] border-[#b5acac] w-[240px] rounded-2xl'>
       <img onClick={()=> navigate(`products/${item.id}`)} className='w-[220px] h-[250px] p-3 mx-auto cursor-pointer' src={item.image} alt="" />
     <div className='p-2 bg-[#00AEFF] rounded-2xl'>
     <p className='text-[16px] font-bold'>{item.title.slice(0,22)}...</p>
